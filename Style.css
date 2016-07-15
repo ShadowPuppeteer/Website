@@ -1,0 +1,21 @@
+body {
+	background-image: url("http://i.telegraph.co.uk/multimedia/archive/01789/skyscrapers_1789587i.jpg");
+}
+
+h1{
+	color: gold;
+	background-color: grey;
+}
+
+p{
+	background-color: orange;
+	font-family: fantasy;
+}
+
+li{
+	color: gold;
+}
+
+strong{
+	color: blue;
+}

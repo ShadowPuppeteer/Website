@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+<div>
+	<nav>
+		<a href="#">About,</a>
+		<a href="#">Blood and Power</a>
+		<a href="#">Games,</a>
+		<a href="#">Progress</a>
+		<br>
+		<a href="#">Development,</a>
+		<a href="#">Kickstarter</a>
+		<a href="#">The Developers</a>
+	</nav>
+</div>
+<div>
+	<ul>
+		<li>Metro Shadows Entertainment is a game developing team owned by, Max Bergerson. </li>
+	</ul>
+</div>
+<article>
+	<h1>Metro Shadows Entertainment</h1>
+	<!--(Background photo tooken by Evan Joseph. We do not own this photo in any way)-->
+    <p>Metro Shadows Entertainment is a game developing company owned by, Max Bergerson. Metro Shadows Entertainment is currently working on their first game which is a RPG called, Blood and Power. Blood and Power is a story based RPG where you play as a character named, Zeriof. Zeriof is a magic user who uses shadow magic to bash his way through monsters and enemies. Like most RPG games Blood and Power allows the main character to acquire followers through his/her journey. Zeriof is a skilled magic user trained in the arts of shadow magic. Most of Zeriof's past is shrouded in complete mystery. The other characters that have been finished are, Lucia, a female magic user trained with the element of fire, and Eltois a female magic user trained in the arts of water/ice magic.
+
+              </p>
+
+
+	  <strong>(Background photo tooken by Evan Joseph. We do not own this picture in any way cool)
+	  </strong>
+    </article>
+	<script type="text/javascript" src="Javascript.js"></script>
+	<cite>Coming Soon</cite>
+	<div>
+		<progress id="progressBar" value="1" max="5000">
+	</div>
+	
+	<video width="320" height="240" controls>
+	   <source src="./videos/Hihat EXXXXXTTTTTTTTTRRRRRRRRRREEEEEEEEEEMMMMMMMMMMMMMMMMMMMMMEEE_1_1_x264.mp4" type="video/mp4">
+	</video>
+	<p>Times button is clicked <span id="counter">0</span></p>
+
+
+	<button id="progress">Press Button</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var value = 1;
+			var counter = 0;
+			$('#progress').click(function() {
+				$('#progressBar').val(value += 2);
+				counter += 1;
+				if(counter == 100) {
+					alert("Achievement unlocked: Starter.  " + counter + " clicks");
+				} else if (counter == 200) {
+					alert("Not bad..." + counter);
+				}
+				document.getElementById('counter').innerHTML = counter;
+			})
+
+		});
+	</script>
+
+</body>
+</html>
